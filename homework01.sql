@@ -15,10 +15,10 @@ SELECT Name FROM Artist;
 
 SELECT * FROM Invoice WHERE BillingCountry = 'Germany';
 
-SELECT COUNT (*) FROM Album;
+SELECT COUNT(*) FROM Album;
 
-SELECT COUNT (*) FROM Customer WHERE Country='France';
+SELECT COUNT(*) FROM Customer WHERE Country='France';
 
-SELECT SUM (total) FROM Invoice;
+SELECT SUM(total) FROM Invoice;
 
-SELECT avg(total) FROM Invoice;
+SELECT AVG(total) FROM Invoice;
