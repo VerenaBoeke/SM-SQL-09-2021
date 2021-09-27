@@ -75,3 +75,8 @@ ORDER BY customerExpenditure DESC;
 
 
 /* What songs were bought with each order? (hint: here you have to do a many-to-many SQL query with three tables: Track, Invoice and InvoiceLine. You have to do two JOINS here) */
+
+SELECT  InvoiceLine.InvoiceId, Track.Name
+FROM InvoiceLine
+LEFT JOIN Track on InvoiceLine.TrackId = Track.TrackId
+LEFT JOIN Invoice on InvoiceLine.InvoiceId = Invoice.InvoiceId;
